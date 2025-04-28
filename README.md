@@ -18,7 +18,7 @@ o	Run the following command to build the Docker image:
   docker build -t username/appname:v1 .  
 ```
 
-Verify your image was created successfully:\
+Verify your image was created successfully:
 ```bash
   docker images
 ```
