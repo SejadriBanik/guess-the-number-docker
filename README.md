@@ -59,7 +59,8 @@ Exposed Port:\
 
 Ensure that you have Docker installed and running on your machine. Then, start the Docker container using the following command:\
 ```bash
-docker run -d -p 8080:5000 --name guess-the-number sejadri/guess-the-number:v1```
+docker run -d -p 8080:5000 --name guess-the-number sejadri/guess-the-number:v1
+```
 This will:\
 •	Start the application in the background (-d for detached mode).\
 •	Expose port 5000 inside the container and map it to port 8080 on your local machine (-p 8080:5000).\
