@@ -58,7 +58,8 @@ Exposed Port:\
 **1. Run the Docker Container** 
 
 Ensure that you have Docker installed and running on your machine. Then, start the Docker container using the following command:\
-`docker run -d -p 8080:5000 --name guess-the-number sejadri/guess-the-number:v1`\
+```bash
+docker run -d -p 8080:5000 --name guess-the-number sejadri/guess-the-number:v1```
 This will:\
 •	Start the application in the background (-d for detached mode).\
 •	Expose port 5000 inside the container and map it to port 8080 on your local machine (-p 8080:5000).\
@@ -86,9 +87,13 @@ Once you guess the number correctly, or if you run out of attempts:\
 
    If you want to exit the game or stop the container, you can use the following Docker commands:\
 •	Stop the container:\
-`docker stop guess-the-number`\
+```bash
+docker stop guess-the-number
+```
 • Remove the container (optional after stopping it):\
-`docker rm guess-the-number`
+```bash
+docker rm guess-the-number
+```
 
 
 ## 6. Troubleshooting Tips
@@ -103,4 +108,6 @@ o	If you encounter a conflict on port 8080, you can change the host port to anot
 •	**Game freezes or does not respond:**\
 o	Check if the container is still running with `docker ps`.\
 o	If the game stops working unexpectedly, you can stop and restart the container:\
-`docker restart guess-the-number`
+```bash
+docker restart guess-the-number
+```
