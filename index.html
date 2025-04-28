@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guess The Number</title>
+</head>
+<body>
+    <h1>Guess a number between 1 and 100</h1>
+
+    {% if message %}
+        <h2>{{ message }}</h2>
+    {% endif %}
+    
+    <form method="POST">
+        <input type="number" name="guess" min="1" max="100" required>
+        <button type="submit">Guess</button>
+    </form>
+</body>
+</html>
